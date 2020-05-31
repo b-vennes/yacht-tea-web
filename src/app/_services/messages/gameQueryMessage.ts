@@ -1,3 +1,3 @@
 export class GameQueryMessage {
-    id: number;
+    userId: string;
 }

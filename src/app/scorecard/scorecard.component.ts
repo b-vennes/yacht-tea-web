@@ -17,7 +17,7 @@ export class ScorecardComponent implements OnInit {
     constructor(private gameService: GameService) { }
 
     ngOnInit(): void {
-        this.gameService.getGameView(1)
+        this.gameService.getGameView()
             .pipe(take(1))
             .subscribe(result => this.scorecard = new ScorecardTable(result.scorecard));
     }
